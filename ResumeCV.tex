@@ -1,0 +1,250 @@
+\documentclass[a4paper,10pt]{article}
+%!TEX program = xelatex
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec}                   %for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip}   %other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo}              %better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+ 
+\usepackage{enumitem}
+\usepackage{supertabular}               %for Grades
+\usepackage{titlesec}                   %custom \section
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue}
+%\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+%\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+ 
+\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+%{Fontin.otf}
+%%%
+
+
+%CV Sections inspired by:
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+ 
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+ 
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+%\usepackage[absolute]{textpos}
+%\setlength{\TPHorizModule}{30mm}
+%\setlength{\TPVertModule}{\TPHorizModule}
+%\textblockorigin{2mm}{0.65\paperheight}
+%\setlength{\parindent}{0pt}
+\usepackage{fontawesome}
+\usepackage{setspace}
+%\usepackage{wasysym}
+%\usepackage{bbding}
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm
+%   \begin{textblock}{1}(0,0)
+%       \rotatebox{-90}{\parbox{500mm}{
+%           Typeset by Alessandro Plasmati with \XeTeX\  \today\ for
+%           {\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%       }
+%   }
+%   \end{textblock}
+%}
+\pagestyle{empty} % non-numbered pages
+ 
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+%--------------------TITLE-------------
+\par{\centering
+        {\Huge Daniel \textsc{Björkman}
+        
+    }Rue de Monthoux 25 - 1201 Geneva - Switzerland - 1988-02-29\\
+    \phone \enspace +41767281095 / +46737784759 \textbullet \enspace \Envelope \enspace dabjor@kth.se \textbullet   \href{http://www.linkedin.com/in/danielbjorkman88}{\includegraphics[width=10ex]{Logo-2C-54px-TM.png}} \href{http://www.linkedin.com/in/danielbjorkman88}{Profile} \\ \\
+   
+    \centering
+ 
+    \bigskip\par
+    }
+  
+ 
+\emph{Education from institutes in five different countries, experienced in developing  particle accelerators by monte carlo radiation simulations. I combine excellent computational and technical problem solving skills with a deep understanding of radiation propagation and medical physics.}
+ 
+
+ 
+
+\section{Work Experience}
+\begin{tabular}{r|p{16cm}}
+ \textsc{Sep} 2016- & \textsc{European Organization for Nuclear Research, CERN} \\
+ Aug 2019 & Physicist at \emph{Department of Radiation Protection}\\
+ \textsc{Geneva}  &\footnotesize{Highly creative R\&D work for the Super Proton Synchrotron (SPS) and the } \\
+   &\footnotesize{  Large Hadron Collider (LHC) experiments. Achieved by 3D modelling and python pre-} \\
+   &\footnotesize{    and post-processing of Monte Carlo transport simulations together with \emph{FLUKA}-tools}. \\ %Improved  Large Hadron Collider (LHC) experiments.: ATLAS and ALICE.  \\
+  % &\footnotesize{processing of Monte Carlo transport simulations and \emph{FLUKA}-tools}.
+   
+   %Analysis utilizing a wide range of \emph{FLUKA}-tools} and self-developed software.
+   %which enables increased capacity and understanding of the
+   %}\\
+ 
+\footnotesize{Achievements:} & \footnotesize{ \textbullet Work permits the SPS to deliver a fourfold increased beam intensity [1,2].}\\
+  &   \footnotesize{ \textbullet Improved collision modelling and radiation description for the ATLAS experiment. } \\ \\
+ 
+ 
+ 
+%Published
+ 
+%Work permits SPS to deliver increased beam currents [1,2]
+ 
+ 
+%Research enables the SPS
+ 
+ 
+ \textsc{Aug} 2015- & \textsc{German Cancer Research Center, DKFZ} \\
+ \textsc{Mar} 2016& Physicist at \emph{Department of Medical Physics in Radiation Oncology}\\
+ Heidelberg &\footnotesize{ MR-only treatment planning by machine learning prediction, } \\
+ & \footnotesize{optimized for particle treatment beam simulations.} \\ \\
+ 
+ 
+ \textsc{Mar} 2013- & \textsc{Royal Institute of Technology, KTH}\\
+ \textsc{June} 2013 &Teacher assistant at \emph{Department of Mathematics}\\
+ Stockholm&\footnotesize{Held exercise sessions for the course SF1625 Calculus in Several Variables. }\\ \\
+ 
+ 
+ 
+\textsc{Aug} 2007- & \textsc{NFB Transport Systems AB}\\
+ \textsc{July} 2016 & \emph{Mover of Furniture} \\
+ 
+Stockholm & \footnotesize{Moved furniture which now demonstrates my determination and work ethics.} \\
+  \\
+\end{tabular}
+ 
+ 
+ 
+%Section: Education
+\section{Education}
+\begin{tabular}{r|p{16cm}}
+ 
+ \textsc{Apr} 2016 & Master of Science in \textsc{Engineering Physics}, \textbf{Royal Institute of Technology, KTH} \\
+Stockholm & Track: Biomedical physics | \normalsize \textsc{Gpa}: 4,378/5 \\
+Sweden& Thesis: ''Prediction of pseudoCTs from clinical MRI \\
+& \qquad \quad \enspace radiotherapy data for ion beam therapy planning''  \\
+\\
+ \textsc{June} 2013 & Bachelor of Science in \textsc{Medical Engineering}, \textbf{Royal Institute of Technology, KTH} \\
+Stockholm &Thesis: ``Tracking of skeletal structures for 4D-CT'' \\
+\\
+ 
+\hspace{5.49mm} Courses & \textbullet \, FLUKA, Radiation Physics, Radiation Protection, \\
+& \hspace{3.5mm} 3 weeks of Accelerator Physics and Technology, Python - \normalsize\textbf{CERN}  \\
+ 
+   & \textbullet \, Seminars in Radiation Oncology and  Developments in Ion Beam Therapy - \normalsize\textbf{Heidelberg Uni.}   \\
+  %& \textbullet \, Radiation Oncology - \normalsize\textbf{Heidelberg University} \\
+  & \textbullet \, Radiation Therapy, MRI, X-ray Physics and Medical Imaging Systems - \normalsize\textbf{ KTH} \\  
+\\
+ 
+%\textsc{Fall} 2015 & Seminar courses at \normalsize\textbf{Heidelberg University/Ion-beam therapy center, HIT} \\
+%\hspace{1mm}  Heidelberg & \textbullet \, Physics in radiation therapy  \\
+%Germany & \textbullet \, Radiation oncology \\
+%\\
+ 
+ 
+\textsc{Fall} 2013&  \textbf{Royal Melbourne Institute of Technology, RMIT} \\
+Melbourne & Exchange Semester | \textsc{Gpa}: 4/4 \\
+Australia & \\
+\\
+ 
+2008  -  2009  &  \textbf{San Diego State University, SDSU} \\
+San Diego & Study abroad year | \textsc{Gpa}: 3,52/4 \\
+CA, USA & \\
+ 
+\end{tabular}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\section{Publications}
+\begin{enumerate}[label={[\arabic*]}]
+  \item D. Björkman, H. Vincke (2019). CERN, Geneva, Switzerland. \MYhref{https://www.oecd-nea.org/science/wprs/egsaatif/}{"High Energy Internal Beam Dump System for the Super Proton Synchrotron"}, paper presented at \italic{ the 14th Specialists' Workshop on Shielding Aspects of Accelerators, Targets, and Irradiation Facilities (SATIF-14)}, Gyeongju, Korea, 30 October - 2 November 2018.
+ 
+  \item D. Björkman, B. Balhan, J. Borburgh, L.S. Esposito, M.A. Fraser, B. Goddard, L.S. Stoel, H. Vincke (2019).   CERN, Geneva, Switzerland. \MYhref{http://accelconf.web.cern.ch/AccelConf/ipac2019/papers/wepmp024.pdf}{"Alternative Material Choices to Reduce Activation of Extraction Equipment"}. \italic{ The 10th International Particle Accelerator Conference (IPAC-19)}, Melbourne, Australia, 19 – 24 May 2019
+\end{enumerate}
+ 
+\section{Certifications}
+Certified to work as a Radiation Protection Officer for radiation sectors B $\&$ C in Switzerland. License given by Institut de Radiophysique in Lausanne for completing their course: \textsc{Radiation Protection Expert}.
+ 
+%by taking \textsc{Radiation Protection Expert}. Course given by Institut de Radiophysique in Switzerland.
+ 
+\section{Software Skills}
+\begin{tabular}{rl}
+\MYhref{http://www.fluka.org/fluka.php}{FLUKA} & Particle fluence, activation, shielding design, energy deposition, optics, \\
+& 3D modelling, beam source modelling and loss profile.\\
+   & Software: \textsc{Flair}, \textsc{Actiwiz}, \textsc{Linebuilder}, \textsc{SimpleGeo}, \textsc{Sesame} \\
+ 
+Programming & \textbullet \, \textbf{\textsc{Python}}, 3 years of daily professional use and 2 courses \\
+& \textbullet \, \textbf{\textsc{Matlab}}, 1 year of academic daily use and 1 course \\
+& \textbullet \, \textbf{\textsc{C++}}, Fluent algorithm development capability (see \MYhref{https://www.hackerrank.com/danielbjorkman88}{HackerRank})\\
+& \textbullet \, \textbf{\textsc{Bash}}, 3 years of occasional professional use \\
+& \textbullet \, \textbf{\textsc{Java}}, 2 courses\\
+ & \MYhref{https://www.hackerrank.com/danielbjorkman88}{https://www.hackerrank.com/danielbjorkman88} \\
+  & \MYhref{https://github.com/danielbjorkman88}{https://github.com/danielbjorkman88} \\
+% &  Github\\
+Creative & Adobe Premiere, After Effects and Photoshop \\
+Other & Linux, Git, Spyder, Visual Studios,  MS Office,  \LaTeX \\ %{\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf} \\
+ %https://github.com/danielbjorkman88
+ %Basic Knowledge:& \textsc{php}, my\textsc{sql}, \textsc{html}, Access, \textsc{Linux}, ubuntu, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}\\
+%Intermediate Knowledge:& \textsc{vba}, Excel, Word, PowerPoint\\
+\end{tabular}
+ 
+%Section: Languages
+\section{Languages}
+\begin{tabular}{rl}
+ \textsc{Swedish:}& Native speaker\\
+\textsc{English:}&Full professional proficiency\\
+\textsc{French:}&Basic Knowledge\\
+\enspace \textsc{Spanish:} &Basic Knowledge\\
+\end{tabular}
+ 
+\section{Interests and Activities}
+\begin{tabular}{rl}
+&\emph{Martial arts, Shotokan Karate}\\
+&\footnotesize{Received the black belt in JKA Shotokan Karate in 2007 after 11 years of practice.}\\\multicolumn{2}{c}{} \\
+ 
+&\emph{Music}\\
+&\footnotesize{I have been playing guitar for nine years.}\\\multicolumn{2}{c}{} \\
+ 
+&\emph{Photography and video shooting/editing}\\
+&\footnotesize{I like to share my passion for travelling through videos and photos.}\\ \multicolumn{2}{c}{} \\
+ 
+ 
+&\emph{Outdoor sports}\\
+&\footnotesize{Climbing and Skiing are passions of mine}\\
+ 
+\end{tabular}
+ 
+%Technology, Open-Source, Programming\\
+%Paradoxes in Decision Making, Psychoanalysis, Behavioural Finance\\
+%Football, Travelling
+ 
+\end{document}
